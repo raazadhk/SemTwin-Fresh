@@ -2,22 +2,7 @@
 
 ![SemTwin architecture](assets/semtwin_architecture.png)
 
-SemTwin builds on InterFuser for CARLA-based autonomous driving experiments and adds digital twin BEV semantic map streaming between an InterFuser agent and a receiver machine.
-
-## Based on InterFuser
-
-> [Hao Shao](http://hao-shao.com/), [Letian Wang](https://letianwang0.wixsite.com/myhome), RuoBing Chen, [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/), [Yu Liu](https://liuyu.us/)
-> 
-> [CoRL 2022](https://arxiv.org/abs/2207.14024)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/safety-enhanced-autonomous-driving-using-1/autonomous-driving-on-carla-leaderboard)](https://paperswithcode.com/sota/autonomous-driving-on-carla-leaderboard?p=safety-enhanced-autonomous-driving-using-1)
-
-This repository contains code based on the paper [Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer](https://github.com/opendilab/InterFuser). This work fully processes and fuses information from multi-modal multi-view sensors for achieving comprehensive scene understanding. Besides, intermediate interpretable features are generated from the framework, which provides more semantics and is exploited to better constrain actions to be within the safe sets.
-Our method achieved new state-of-the-art on [CARLA AD Leaderboard](https://leaderboard.carla.org/leaderboard/) by June 11 2022.
-
-## News
-
-[12/21] Now, a similar dataset can be found in [here, hugging face](https://github.com/opendilab/LMDrive) or [openxlab](https://openxlab.org.cn/datasets/deepcs233/LMDrive). The only difference is the sample rate is 10Hz in that repo, instead of 2Hz of InterFuser.
+SemTwin is a CARLA-based autonomous driving project for task-oriented semantic communication and digital-twin assisted edge-cloud collaboration.
 
 ## Contents
 1. [Setup](#setup)
