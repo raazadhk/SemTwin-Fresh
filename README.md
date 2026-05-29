@@ -20,11 +20,12 @@ Our method achieved new state-of-the-art on [CARLA AD Leaderboard](https://leade
 
 ## Contents
 1. [Setup](#setup)
-2. [Dataset](#dataset)
-3. [Data Generation](#data-generation)
-4. [Training](#training)
-5. [Evaluation](#evaluation)
-6. [Acknowledgements](#acknowledgements)
+2. [Run Digital Twin Receiver on Computer B](#run-digital-twin-receiver-on-computer-b)
+3. [Dataset](#dataset)
+4. [Data Generation](#data-generation)
+5. [Training](#training)
+6. [Evaluation](#evaluation)
+7. [Acknowledgements](#acknowledgements)
 
 ## Setup
 Install anaconda
@@ -54,6 +55,63 @@ easy_install carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
 ```
 
 **Note:** we choose the setuptools==41 to install because this version has the feature `easy_install`. After installing the carla.egg you can install the lastest setuptools to avoid *No module named distutils_hack*.
+
+## Run Digital Twin Receiver on Computer B
+
+Computer B only needs to clone this repository, install the small receiver dependencies, start CARLA, and run the receiver script.
+
+Clone this repository on Computer B:
+
+```bash
+git clone https://github.com/raazadhk/SemTwin-Fresh.git
+cd SemTwin-Fresh
+```
+
+Install the Python packages used by the receiver:
+
+```bash
+pip install opencv-python pillow numpy
+```
+
+If a conda environment is used, activate it first:
+
+```bash
+conda activate interfuser
+```
+
+Start CARLA simulator on Computer B in a separate terminal:
+
+```bash
+cd /path/to/CARLA
+./CarlaUE4.sh
+```
+
+Then run the digital twin receiver:
+
+```bash
+python tools/digital_twin_receiver.py
+```
+
+The receiver listens on:
+
+```text
+0.0.0.0:9999
+```
+
+On the InterFuser agent side, set the digital twin host to Computer B's IP address and use the same port:
+
+```python
+DIGITAL_TWIN_HOST = "COMPUTER_B_IP_ADDRESS"
+DIGITAL_TWIN_PORT = 9999
+```
+
+If Computer B blocks the port, allow it:
+
+```bash
+sudo ufw allow 9999/tcp
+```
+
+Press `q` in the receiver image window to quit. Press `s` to save a screenshot of the current BEV frame.
 
 ## Dataset
 The data is generated with ```leaderboard/team_code/auto_pilot.py``` in 8 CARLA towns using the routes and scenarios files provided at ```leaderboard/data``` on CARLA 0.9.10.1
