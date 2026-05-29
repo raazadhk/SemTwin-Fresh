@@ -1,5 +1,5 @@
 # InterFuser: Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer
-![pipeline](assets/pipeline.png)
+#![pipeline](assets/pipeline.png)
 > [Hao Shao](http://hao-shao.com/), [Letian Wang](https://letianwang0.wixsite.com/myhome), RuoBing Chen, [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/), [Yu Liu](https://liuyu.us/)
 > 
 > [CoRL 2022](https://arxiv.org/abs/2207.14024)
