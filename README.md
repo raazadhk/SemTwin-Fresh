@@ -4,24 +4,6 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/safety-enhanced-autonomous-driving-using-1/autonomous-driving-on-carla-leaderboard)](https://paperswithcode.com/sota/autonomous-driving-on-carla-leaderboard?p=safety-enhanced-autonomous-driving-using-1)
 
-This repository contains code for the paper [Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer](https://github.com/opendilab/InterFuser). This work fully processes and fuses information from multi-modal multi-view sensors for achieving comprehensive scene understanding. Besides, intermediate interpretable features are generated from our framework, which provides more semantics and is exploited to better constrain actions to be within the safe sets.
-Our method achieved new state-of-the-art on [CARLA AD Leaderboard](https://leaderboard.carla.org/leaderboard/) by June 11 2022.
-
-## News
-
-[12/21] Now, a similar dataset can be found in [here, hugging face](https://github.com/opendilab/LMDrive) or [openxlab](https://openxlab.org.cn/datasets/deepcs233/LMDrive). The only difference is the sample rate is 10Hz in that repo, instead of 2Hz of InterFuser.
-
-## Architecture Diagram
-
-Place the SemTwin architecture diagram at:
-
-```text
-assets/semtwin_architecture.png
-```
-
-Then it will appear here:
-
-![SemTwin architecture](assets/semtwin_architecture.png)
 
 ## Contents
 1. [Setup](#setup)
@@ -275,21 +257,13 @@ We also provide examplery model weights for direct evaluation which can be downl
 
 ## Acknowledgements
 This implementation is based on code from several repositories.
+- [InterFuser](https://github.com/opendilab/InterFuser)
 - [Transfuser](https://github.com/autonomousvision/transfuser)
 - [2020_CARLA_challenge](https://github.com/bradyz/2020_CARLA_challenge)
 - [CARLA Leaderboard](https://github.com/carla-simulator/leaderboard)
 - [Scenario Runner](https://github.com/carla-simulator/scenario_runner)
 
 
-## Citation
-If you find our repo, dataset or paper useful, please cite us as
-```bibtex
-@article{shao2022interfuser,
- title={Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer},
- author={Hao Shao and Letian Wang and RuoBing Chen and Hongsheng Li and Yu Liu},
- journal={arXiv preprint arXiv:2207.14024},
- year={2022},
-}
 ```
 
 ## License
