@@ -1,8 +1,6 @@
-# InterFuser: Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer
+# SemTwin:Task-Oriented Semantic Communication for Digital-Twin Assisted Edge-Cloud Collaborative Autonomous Driving System
 #![pipeline](assets/semtwin_architecture.png)
-> [Hao Shao](http://hao-shao.com/), [Letian Wang](https://letianwang0.wixsite.com/myhome), RuoBing Chen, [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/), [Yu Liu](https://liuyu.us/)
-> 
-> [CoRL 2022](https://arxiv.org/abs/2207.14024)
+
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/safety-enhanced-autonomous-driving-using-1/autonomous-driving-on-carla-leaderboard)](https://paperswithcode.com/sota/autonomous-driving-on-carla-leaderboard?p=safety-enhanced-autonomous-driving-using-1)
 
