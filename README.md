@@ -1,4 +1,4 @@
-# SemTwin
+# SemTwin: Task-Oriented Semantic Communication for Digital-Twin Assisted Edge-Cloud Collaborative Autonomous Driving System
 
 ![SemTwin architecture](assets/semtwin_architecture.png)
 
@@ -271,21 +271,13 @@ We also provide examplery model weights for direct evaluation which can be downl
 
 ## Acknowledgements
 This implementation is based on code from several repositories.
+- [InterFuser](https://github.com/opendilab/InterFuser)
 - [Transfuser](https://github.com/autonomousvision/transfuser)
 - [2020_CARLA_challenge](https://github.com/bradyz/2020_CARLA_challenge)
 - [CARLA Leaderboard](https://github.com/carla-simulator/leaderboard)
 - [Scenario Runner](https://github.com/carla-simulator/scenario_runner)
 
 
-## Citation
-If you find our repo, dataset or paper useful, please cite us as
-```bibtex
-@article{shao2022interfuser,
- title={Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion Transformer},
- author={Hao Shao and Letian Wang and RuoBing Chen and Hongsheng Li and Yu Liu},
- journal={arXiv preprint arXiv:2207.14024},
- year={2022},
-}
 ```
 
 ## License
