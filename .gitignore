@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+
+dataset/
+data/
+carla/
+birdview_v2_cache/
+interfuser_complete_dataset/
+interfuser_frame_dataset/
+leaderboard/interfuser_frame_dataset/
+
+attention_results/
+attention_images_1/
+results/
+interfuser/output/
+leaderboard/team_code/results/
+leaderboard/team_code/gradcam*_results/
+
+Untitled Document*
