@@ -13,10 +13,17 @@ Our method achieved new state-of-the-art on [CARLA AD Leaderboard](https://leade
 
 [12/21] Now, a similar dataset can be found in [here, hugging face](https://github.com/opendilab/LMDrive) or [openxlab](https://openxlab.org.cn/datasets/deepcs233/LMDrive). The only difference is the sample rate is 10Hz in that repo, instead of 2Hz of InterFuser.
 
-## Demo Video
+## Architecture Diagram
 
-<img src="assets/Town07_WetCloudyMorning.gif" height="400">
+Place the SemTwin architecture diagram at:
 
+```text
+assets/semtwin_architecture.png
+```
+
+Then it will appear here:
+
+![SemTwin architecture](assets/semtwin_architecture.png)
 
 ## Contents
 1. [Setup](#setup)
