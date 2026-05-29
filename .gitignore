@@ -8,7 +8,9 @@ __pycache__/
 *.pt
 *.ckpt
 
-dataset/
+dataset/*
+!dataset/
+!dataset/*.py
 data/
 carla/
 birdview_v2_cache/
