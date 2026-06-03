@@ -26,8 +26,8 @@ Clone the repo and build the environment
 ```Shell
 git clone https://github.com/raazadhk/SemTwin-Fresh.git
 cd SemTwin-Fresh
-conda create -n interfuser python=3.7
-conda activate interfuser
+conda create -n semtwin python=3.7
+conda activate semtwin
 pip3 install -r requirements.txt
 cd interfuser
 python setup.py develop
