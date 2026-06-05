@@ -56,6 +56,8 @@ easy_install carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
 
 Computer B only needs to clone this repository, install the small receiver dependencies, start CARLA, and run the receiver script.
 
+### Setup
+
 Clone this repository on Computer B:
 
 **Recommended: Configure conda-forge first for better stability:**
@@ -80,27 +82,28 @@ conda config --set ssl_verify false
 
 All required packages (including opencv-python, pillow, and numpy) are already included in requirements.txt.
 
-Now run the digital twin receiver:
+### Running the Digital Twin Receiver
+
+Run the digital twin receiver:
 
 ```bash
 python tools/digital_twin_receiver.py
 ```
 
-The receiver listens on:
+### Configuration & Network Setup
 
+The receiver listens on:
 ```text
 0.0.0.0:XXXX
 ```
 
-On the Machine A side, set the host to Computer B's IP address and use the same port:
-
+**On Machine A side:** Set the host to Computer B's IP address and use the same port:
 ```python
 DIGITAL_TWIN_HOST = "COMPUTER_B_IP_ADDRESS"
 DIGITAL_TWIN_PORT = XXXX
 ```
 
-If Computer B blocks the port, allow it:
-
+**If Computer B blocks the port:** Allow it through the firewall:
 ```bash
 sudo ufw allow XXXX/tcp
 ```
