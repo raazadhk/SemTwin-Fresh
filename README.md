@@ -78,19 +78,9 @@ pip3 install -r requirements.txt
 conda config --set ssl_verify false
 ```
 
-Install the additiomal Python packages used by the B machine:
+All required packages (including opencv-python, pillow, and numpy) are already included in requirements.txt.
 
-```bash
-pip install opencv-python pillow numpy
-```
-
-If a conda environment is used, activate it first:
-
-```bash
-conda activate semtwin
-```
-
-Then run the digital twin receiver:
+Now run the digital twin receiver:
 
 ```bash
 python tools/digital_twin_receiver.py
