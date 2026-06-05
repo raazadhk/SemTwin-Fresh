@@ -35,6 +35,7 @@ python setup.py develop
 
 Download and setup CARLA 0.9.10.1
 ```Shell
+cd SemTwin-Fresh
 chmod +x setup_carla.sh
 ./setup_carla.sh
 easy_install carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
