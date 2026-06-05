@@ -23,6 +23,13 @@ source ~/.profile
 
 Clone the repo and build the environment
 
+**Recommended: Configure conda-forge first for better stability:**
+```Shell
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+Then:
 ```Shell
 git clone https://github.com/raazadhk/SemTwin-Fresh.git
 cd SemTwin-Fresh
@@ -33,15 +40,9 @@ cd interfuser
 python setup.py develop
 ```
 
-**Note:** If you encounter SSL certificate errors when creating the conda environment, run this first:
+**If you still encounter SSL certificate errors** (due to Anaconda server certificate issues), run:
 ```Shell
 conda config --set ssl_verify false
-```
-
-Or use conda-forge for better stability:
-```Shell
-conda config --add channels conda-forge
-conda config --set channel_priority strict
 ```
 
 Download and setup CARLA 0.9.10.1
@@ -57,6 +58,13 @@ Computer B only needs to clone this repository, install the small receiver depen
 
 Clone this repository on Computer B:
 
+**Recommended: Configure conda-forge first for better stability:**
+```Shell
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+Then:
 ```Shell
 git clone https://github.com/raazadhk/SemTwin-Fresh.git
 cd SemTwin-Fresh
@@ -65,15 +73,9 @@ conda activate semtwin
 pip3 install -r requirements.txt
 ```
 
-**Note:** If you encounter SSL certificate errors when creating the conda environment, run this before creating the environment:
+**If you still encounter SSL certificate errors** (due to Anaconda server certificate issues), run:
 ```Shell
 conda config --set ssl_verify false
-```
-
-Alternatively, you can add conda-forge channel for better stability:
-```Shell
-conda config --add channels conda-forge
-conda config --set channel_priority strict
 ```
 
 Install the additiomal Python packages used by the B machine:
