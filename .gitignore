@@ -21,7 +21,7 @@ leaderboard/interfuser_frame_dataset/
 
 attention_results/
 attention_images_1/
-results/
+# results/
 interfuser/output/
 leaderboard/team_code/results/
 leaderboard/team_code/gradcam*_results/
