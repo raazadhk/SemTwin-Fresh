@@ -63,7 +63,7 @@ pip install opencv-python pillow numpy
 If a conda environment is used, activate it first:
 
 ```bash
-conda activate interfuser
+conda activate semtwin
 ```
 
 Start CARLA simulator on Computer B in a separate terminal:
