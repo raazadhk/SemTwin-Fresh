@@ -66,13 +66,6 @@ If a conda environment is used, activate it first:
 conda activate semtwin
 ```
 
-Start CARLA simulator on Computer B in a separate terminal:
-
-```bash
-cd /path/to/CARLA
-./CarlaUE4.sh
-```
-
 Then run the digital twin receiver:
 
 ```bash
