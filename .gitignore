@@ -11,7 +11,8 @@ __pycache__/
 dataset/*
 !dataset/
 !dataset/*.py
-data/
+/data/
+!leaderboard/data/
 carla/
 birdview_v2_cache/
 interfuser_complete_dataset/
