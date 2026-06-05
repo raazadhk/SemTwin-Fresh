@@ -75,20 +75,20 @@ python tools/digital_twin_receiver.py
 The receiver listens on:
 
 ```text
-0.0.0.0:9999
+0.0.0.0:XXXX
 ```
 
 On the Machine A side, set the host to Computer B's IP address and use the same port:
 
 ```python
 DIGITAL_TWIN_HOST = "COMPUTER_B_IP_ADDRESS"
-DIGITAL_TWIN_PORT = 9999
+DIGITAL_TWIN_PORT = XXXX
 ```
 
 If Computer B blocks the port, allow it:
 
 ```bash
-sudo ufw allow 9999/tcp
+sudo ufw allow XXXX/tcp
 ```
 
 ## Dataset
