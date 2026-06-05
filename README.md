@@ -6,7 +6,7 @@ SemTwin is a CARLA-based autonomous driving project for task-oriented semantic c
 
 ## Contents
 1. [Setup](#setup)
-2. [Run Digital Twin Receiver on Computer B](#run-digital-twin-receiver-on-computer-b)
+2. [Run on Machine B for BEV Maps](#run-digital-twin-receiver-on-computer-b)
 3. [Dataset](#dataset)
 4. [Data Generation](#data-generation)
 5. [Training](#training)
