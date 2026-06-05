@@ -39,9 +39,6 @@ chmod +x setup_carla.sh
 ./setup_carla.sh
 easy_install carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
 ```
-
-**Note:** we choose the setuptools==41 to install because this version has the feature `easy_install`. After installing the carla.egg you can install the lastest setuptools to avoid *No module named distutils_hack*.
-
 ## Run Digital Twin Receiver on Computer B
 
 Computer B only needs to clone this repository, install the small receiver dependencies, start CARLA, and run the receiver script.
