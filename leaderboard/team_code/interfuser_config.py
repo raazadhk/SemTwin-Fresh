@@ -22,7 +22,7 @@ class GlobalConfig:
 
     max_speed = 5
     collision_buffer = [2.5, 1.2]
-    model_path = "/home/carla1000/InterFuser/leaderboard/team_code/interfuser.pth.tar"
+    model_path = "/home/carla1000/SemTwin-Fresh/leaderboard/team_code/interfuser.pth.tar"
     momentum = 0
     skip_frames = 1
     detect_threshold = 0.04

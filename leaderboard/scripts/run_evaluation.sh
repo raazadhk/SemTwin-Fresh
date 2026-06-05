@@ -8,6 +8,7 @@ export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.10-py3.
 export PYTHONPATH=$PYTHONPATH:leaderboard
 export PYTHONPATH=$PYTHONPATH:leaderboard/team_code
 export PYTHONPATH=$PYTHONPATH:scenario_runner
+export PYTHONPATH=$PYTHONPATH:/home/carla1000/SemTwin-Fresh/interfuser
 
 export LEADERBOARD_ROOT=/home/carla1000/SemTwin-Fresh/leaderboard
 export SCENARIO_RUNNER_ROOT=/home/carla1000/SemTwin-Fresh/scenario_runner
@@ -21,7 +22,7 @@ export ROUTES=/home/carla1000/SemTwin-Fresh/leaderboard/data/42routes/42routes.x
 export TEAM_AGENT=/home/carla1000/SemTwin-Fresh/leaderboard/team_code/interfuser_agent.py # agent
 #export TEAM_AGENT=/home/carla1000/InterFuser/leaderboard/team_code/auto_pilot.py # agent
 export TEAM_CONFIG=/home/carla1000/SemTwin-Fresh/leaderboard/team_code/interfuser_config.py # model checkpoint, not required for expert
-export CHECKPOINT_ENDPOINT=/home/carla1000/SemTwin-Fresh/results/sample_resultvideo100020000.json # results file
+export CHECKPOINT_ENDPOINT=/home/carla1000/SemTwin-Fresh/results/sample_resultvideo10002000010000.json # results file
 #export SCENARIOS=/home/carla1000/InterFuser/leaderboard/data/scenarios/town05_all_scenarios.json
 export SCENARIOS=/home/carla1000/SemTwin-Fresh/leaderboard/data/42routes/42scenarios.json
 export SAVE_PATH=/home/carla1000/SemTwin-Fresh/data/eval # path for saving episodes while evaluating
