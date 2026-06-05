@@ -46,12 +46,15 @@ Computer B only needs to clone this repository, install the small receiver depen
 
 Clone this repository on Computer B:
 
-```bash
+```Shell
 git clone https://github.com/raazadhk/SemTwin-Fresh.git
 cd SemTwin-Fresh
+conda create -n semtwin python=3.7
+conda activate semtwin
+pip3 install -r requirements.txt
 ```
 
-Install the Python packages used by the receiver:
+Install the additiomal Python packages used by the B machine:
 
 ```bash
 pip install opencv-python pillow numpy
@@ -82,7 +85,7 @@ The receiver listens on:
 0.0.0.0:9999
 ```
 
-On the InterFuser agent side, set the digital twin host to Computer B's IP address and use the same port:
+On the Machine A side, set the digital twin host to Computer B's IP address and use the same port:
 
 ```python
 DIGITAL_TWIN_HOST = "COMPUTER_B_IP_ADDRESS"
@@ -94,8 +97,6 @@ If Computer B blocks the port, allow it:
 ```bash
 sudo ufw allow 9999/tcp
 ```
-
-Press `q` in the receiver image window to quit. Press `s` to save a screenshot of the current BEV frame.
 
 ## Dataset
 The data is generated with ```leaderboard/team_code/auto_pilot.py``` in 8 CARLA towns using the routes and scenarios files provided at ```leaderboard/data``` on CARLA 0.9.10.1
