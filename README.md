@@ -33,6 +33,17 @@ cd interfuser
 python setup.py develop
 ```
 
+**Note:** If you encounter SSL certificate errors when creating the conda environment, run this first:
+```Shell
+conda config --set ssl_verify false
+```
+
+Or use conda-forge for better stability:
+```Shell
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
 Download and setup CARLA 0.9.10.1
 ```Shell
 cd SemTwin-Fresh
@@ -52,6 +63,17 @@ cd SemTwin-Fresh
 conda create -n semtwin python=3.7
 conda activate semtwin
 pip3 install -r requirements.txt
+```
+
+**Note:** If you encounter SSL certificate errors when creating the conda environment, run this before creating the environment:
+```Shell
+conda config --set ssl_verify false
+```
+
+Alternatively, you can add conda-forge channel for better stability:
+```Shell
+conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Install the additiomal Python packages used by the B machine:
