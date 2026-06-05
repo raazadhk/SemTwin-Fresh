@@ -87,7 +87,7 @@ All required packages (including opencv-python, pillow, and numpy) are already i
 Run the digital twin receiver:
 
 ```bash
-python tools/digital_twin_receiver.py
+python tools/receiver.py
 ```
 
 ### Configuration & Network Setup
