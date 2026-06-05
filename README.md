@@ -78,7 +78,7 @@ The receiver listens on:
 0.0.0.0:9999
 ```
 
-On the Machine A side, set the digital twin host to Computer B's IP address and use the same port:
+On the Machine A side, set the host to Computer B's IP address and use the same port:
 
 ```python
 DIGITAL_TWIN_HOST = "COMPUTER_B_IP_ADDRESS"
