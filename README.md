@@ -107,6 +107,16 @@ DIGITAL_TWIN_PORT = XXXX
 ```bash
 sudo ufw allow XXXX/tcp
 ```
+### Demo of Evaluation with a single CARLA Server
+Run a single CARLA server on one terminal.
+```Shell
+carla/CarlaUE4.sh --world-port=2000 -opengl
+```
+Open a new terminal and run this.
+```Shell
+./leaderboard/scripts/run_evaluation.sh
+```
+The expert agent used for data generation is defined in ```leaderboard/team_code/auto_pilot.py```. Different variables which need to be set are specified in ```leaderboard/scripts/run_evaluation.sh```. 
 
 ## Dataset
 The data is generated with ```leaderboard/team_code/auto_pilot.py``` in 8 CARLA towns using the routes and scenarios files provided at ```leaderboard/data``` on CARLA 0.9.10.1
@@ -182,13 +192,7 @@ bash data_collection/batch_run/run_route_routes_town07_tiny.sh
 
 **Note2:** We also provide 7 kinds of night weather conditions in `leaderboard/team_code/auto_pilot.py`, you can modify the above code and scripts to collect the night dataset.
 
-### Data Generation with a single CARLA Server
-With a single CARLA server, rollout the autopilot to start data generation.
-```Shell
-carla/CarlaUE4.sh --world-port=2000 -opengl
-./leaderboard/scripts/run_evaluation.sh
-```
-The expert agent used for data generation is defined in ```leaderboard/team_code/auto_pilot.py```. Different variables which need to be set are specified in ```leaderboard/scripts/run_evaluation.sh```. 
+
 
 ### Some Useful tools
 We provide some useful python scripts in  `tools/data`, for example:
