@@ -81,9 +81,6 @@ def start_receiving(interfuser_model):
     logging.info(f"Receiver threads initialized: {[t.name for t in threads]}")
     return  # hands off cleanly without blocking
 
-# ------------------------------------------------------------------------------
-# InterFuser Model Components (background support)
-# ------------------------------------------------------------------------------
 
 def _get_clones(module, N):
     return nn.ModuleList([copy.deepcopy(module) for _ in range(N)])
@@ -333,10 +330,6 @@ class SpatialSoftmax(nn.Module):
         feature_keypoints[:, :, 0] = feature_keypoints[:, :, 0] * 12
         return feature_keypoints
 
-
-# ------------------------------------------------------------------------------
-# BEV Digital Twin Receiver — Main
-# ------------------------------------------------------------------------------
 
 HOST = "0.0.0.0"   # Listen on all interfaces
 PORT = 9999        # Must match DIGITAL_TWIN_PORT in the InterFuser agent
